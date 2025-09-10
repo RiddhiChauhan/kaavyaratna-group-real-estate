@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospitality Projects | The Fern Residency by Kaavyaratna Group</title>
+    <meta name="description"
+        content="Discover Kaavyaratna Group's hospitality venture—The Fern Residency, Gandhinagar. Premium rooms, curated dining, event spaces, gym facilities, and sustainable design near GIFT City.">
+
+    <link rel="stylesheet" href="assets/css/new_kr.css">
+    <link rel="stylesheet" href="assets/css/newstylee67d.css">
+
+    <style>
+        .hospitality-section {
+            padding: 60px 0;
+            background: #fff;
+        }
+
+        .hospitality-section:nth-child(even) {
+            background: #f8f9fa;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            color: #b52c30;
+            text-align: center;
+            margin-bottom: 3rem;
+            font-weight: 700;
+        }
+
+        .hospitality-intro {
+            font-size: 1.2rem;
+            color: #666;
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto 4rem;
+            line-height: 1.8;
+        }
+
+        .amenity-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .amenity-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(196, 30, 58, 0.1);
+            transition: all 0.3s ease;
+            border: 1px solid rgba(196, 30, 58, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .amenity-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, #b52c30, #a01846);
+        }
+
+        .amenity-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(196, 30, 58, 0.15);
+        }
+
+        .amenity-card h4 {
+            color: #b52c30;
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .amenity-card p {
+            color: #666;
+            line-height: 1.7;
+            margin: 0;
+        }
+
+        .location-highlight {
+            background: linear-gradient(135deg, #b52c30, #a01846);
+            color: white;
+            padding: 3rem;
+            border-radius: 20px;
+            margin: 3rem 0;
+            text-align: center;
+        }
+
+        .location-highlight h4 {
+            color: white;
+            font-size: 1.6rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .location-highlight ul {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .location-highlight li {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1rem;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin: 3rem 0;
+        }
+
+        .feature-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            display: flex;
+            align-items: center;
+            border-left: 4px solid #b52c30;
+            transition: all 0.3s ease;
+        }
+
+        .feature-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 6px 20px rgba(196, 30, 58, 0.15);
+        }
+
+        .feature-item::before {
+            content: "✓";
+            color: #b52c30;
+            font-weight: bold;
+            font-size: 1.3rem;
+            margin-right: 1rem;
+            background: rgba(196, 30, 58, 0.1);
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .comparison-table {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            margin: 3rem 0;
+        }
+
+        .comparison-table table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .comparison-table thead tr {
+            background: linear-gradient(135deg, #b52c30, #a01846);
+            color: white;
+        }
+
+        .comparison-table th,
+        .comparison-table td {
+            padding: 1.5rem;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+            border-right: 1px solid #eee;
+        }
+
+        .comparison-table th {
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+
+        .comparison-table tbody tr:hover {
+            background: rgba(196, 30, 58, 0.05);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .contact-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            border-top: 5px solid #b52c30;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(196, 30, 58, 0.15);
+        }
+
+        .contact-card h4 {
+            color: #b52c30;
+            font-size: 1.4rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-card p {
+            margin-bottom: 0.8rem;
+            color: #666;
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, rgba(196, 30, 58, 0.95), rgba(160, 24, 70, 0.95)),
+                url('assets/new_img/hospitality.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 5rem 0;
+            text-align: center;
+            position: relative;
+        }
+
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(196, 30, 58, 0.8);
+        }
+
+        .cta-section .container {
+            position: relative;
+            z-index: 2;
+        }
+
+        .cta-section h3 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+        }
+
+        .cta-section p {
+            font-size: 1.2rem;
+            margin-bottom: 3rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .btn-hospitality {
+            display: inline-block;
+            padding: 15px 35px;
+            background: white;
+            color: #b52c30;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            margin: 0 10px;
+            border: 2px solid white;
+        }
+
+        .btn-hospitality:hover {
+            background: transparent;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(255, 255, 255, 0.3);
+        }
+
+        .btn-hospitality.secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+
+        .btn-hospitality.secondary:hover {
+            background: white;
+            color: #b52c30;
+        }
+
+        @media (max-width: 768px) {
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .amenity-grid {
+                grid-template-columns: 1fr;
+            }
+
+           
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-section h3 {
+                font-size: 2rem;
+            }
+
+            .amenity-card {
+                padding: 2rem;
+            }
+
+            .hospitality-section {
+                padding: 40px 0;
+            }
+        }
+
+        .emoji-icon {
+            font-size: 1.5rem;
+            margin-right: 10px;
+        }
+
+        .stats-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 2rem;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #b52c30;
+            display: block;
+        }
+
+        .stat-label {
+            color: #666;
+            font-size: 1.1rem;
+            margin-top: 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- WhatsApp Widget -->
+    <div
+        style="bottom: 21px;left: 23px;opacity: 1;transition: opacity 0.5s ease 0s;box-sizing: border-box;direction: ltr;position: fixed !important;z-index: 16000160 !important;">
+        <div class="q8c6tt-2 jxPOhn">
+            <a color="green" style="display: flex"
+                href="http://api.whatsapp.com/send?phone=919274683334&amp;text=Hi,%20I%20want%20to%20know%20about%20The%20Fern%20Residency%20hospitality%20services"
+                target="_blank">
+                <div class="q8c6tt-0 hAEDqp">
+                    <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"
+                        style="width: 100%; height: 100%; fill: rgb(255, 255, 255); stroke: none;">
+                        <path
+                            d="M19.11 17.205c-.372 0-1.088 1.39-1.518 1.39a.63.63 0 0 1-.315-.1c-.802-.402-1.504-.817-2.163-1.447-.545-.516-1.146-1.29-1.46-1.963a.426.426 0 0 1-.073-.215c0-.33.99-.945.99-1.49 0-.143-.73-2.09-.832-2.335-.143-.372-.214-.487-.6-.487-.187 0-.36-.043-.53-.043-.302 0-.53.115-.746.315-.688.645-1.032 1.318-1.06 2.264v.114c-.015.99.472 1.977 1.017 2.78 1.23 1.82 2.506 3.41 4.554 4.34.616.287 2.035.888 2.722.888.817 0 2.15-.515 2.478-1.318.13-.33.244-.73.244-1.088 0-.058 0-.144-.03-.215-.1-.172-2.434-1.39-2.678-1.39zm-2.908 7.593c-1.747 0-3.48-.53-4.942-1.49L7.793 24.41l1.132-3.337a8.955 8.955 0 0 1-1.72-5.272c0-4.955 4.04-8.995 8.997-8.995S25.2 10.845 25.2 15.8c0 4.958-4.04 8.998-8.998 8.998zm0-19.798c-5.96 0-10.8 4.842-10.8 10.8 0 1.964.53 3.898 1.546 5.574L5 27.176l5.974-1.92a10.807 10.807 0 0 0 16.03-9.455c0-5.958-4.842-10.8-10.802-10.8z">
+                        </path>
+                    </svg>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="tp-ha-header transparent-header">
+            <div id="header-sticky" class="tp-ha-header__main pl-60 pr-60">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-xl-5 col-lg-5 d-none d-xl-block pl-0">
+                            <div class="main-menu law-menu text-left">
+                                <nav id="mobile-menu">
+                                    <ul>
+                                        <li class="has-dropdown">
+                                            <a href="#">Kaavyaratna</a>
+                                            <ul class="submenu">
+                                                <li><a href="about.html">About Us</a></li>
+                                                <li><a href="events.html">Events</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="has-dropdown">
+                                            <a href="#">Projects</a>
+                                            <ul class="submenu">
+                                                <li><a href="ongoing-projects.html">Ongoing Project</a></li>
+                                                <li><a href="completed-projects.html">Completed Project</a></li>
+                                                <li><a href="upcoming-projects.html">Upcoming Project</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="has-dropdown">
+                                            <a href="#">Partner with Us</a>
+                                            <ul class="submenu">
+                                                <li><a href="channel-partner.html">Channel Partners</a></li>
+                                                <li><a href="rent-or-lease.html">Rent – Lease</a></li>
+                                                <li><a href="suggest-land.html">Suggest Land</a></li>
+                                                <li><a href="vendor-registration.html">Vendor Registration</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-5 d-xl-block">
+                            <div class="logo">
+                                <a href="index.html">
+                                    <img src="https://ik.imagekit.io/xzsikjxn8/kv/assets/img/kaavyaratna_tm_logo.png"
+                                        alt="Kaavyaratna" class="w-100" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-5 col-lg-5 d-none d-xl-block pr-0">
+                            <div class="main-menu law-menu text-right">
+                                <nav id="mobile-menu1">
+                                    <ul>
+                                        <li><a href="blogs.html">Blog</a></li>
+                                        <li><a href="careers.html">Careers</a></li>
+                                        <li class="has-dropdown">
+                                            <a href="#" class="active">Hospitality</a>
+                                        </li>
+                                        <li class="has-dropdown">
+                                            <a href="#">Contact Us</a>
+                                            <ul class="submenu contact-submenu">
+                                                <li><a href="contact-us.html">Inquiry</a></li>
+                                                <li><a href="https://care.kaavyaratna.in/" target="_blank">Care</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="col-7 d-xl-none d-block">
+                            <div class="tp-header-search-nav d-flex justify-content-end">
+                                <div class="tp-header-nav">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Off Canvas -->
+    <div class="tp-offcanvas-wrapper">
+        <div class="tp-offcanvas white-bg">
+            <div class="tp-offcanvas-close">
+                <span><i class="fal fa-times"></i></span>
+            </div>
+            <ul class="tp-mobile-menu">
+                <li class="mob-link"><a href="blogs.html">Blog</a></li>
+                <li class="mob-link"><a href="careers.html">Careers</a></li>
+                <li class="mob-link"><a href="contact-us.html">Contact Us</a></li>
+                <li class="mob-link"><a href="hospitality.html">Hospitality</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="body-overlay"></div>
+
+    <!-- Back to Top -->
+    <a href="#main-wrapper" id="tp-backto-top" class="tp-back-to-top">
+        <i class="far fa-angle-double-up"></i>
+    </a>
+
+    <!-- Main Content -->
+    <main class="deco_wrap">
+        <!-- Hero Section -->
+        <div class="breadcrumb__area theme-bg bg-lazy" data-src="assets/new_img/hospitality.jpg"
+            style="background-image: url('assets/new_img/hospitality.jpg');background-position: center center;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xxl-12">
+                        <div class="breadcrumb__content p-relative z-index-1">
+                            <h1 class="breadcrumb__title">Hospitality & Hospitality Estates</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hotel Introduction -->
+        <section class="hospitality-section">
+            <div class="container">
+                <h3 class="tp-section__title wow tpfadeUp mb-50 text-center" > The Fern Residency, Gandhinagar</h3>
+                <div class="hospitality-intro">
+                    The Fern Residency, Gandhinagar, situated at Sargasan Cross Road on Sarkhej-Gandhinagar Highway,
+                    offers 75 contemporary rooms and suites, all equipped with modern amenities. Our all-day dining
+                    restaurant caters to your culinary desires and we provide state-of-the-art banquets ideally suited
+                    for social or corporate events. Enjoy our well-equipped gym to rejuvenate during your stay.
+                    Centrally located at Sargasan Cross road, the hotel provides easy access to Mahatma Mandir
+                    Convention and Exhibition Centre, Info City IT Park, TCS Garima Park and other of Gandhinagar's most
+                    popular landmarks.
+                </div>
+
+             
+
+               <!-- Location Highlight -->
+                <div class="location-highlight">
+                    <h3 class="tp-section__title wow tpfadeUp mb-50 text-center" style="color: white;">Prime Location Advantage</h3>
+                    <p class="hospitality-intro" style="color: white;">The Fern Residency is centrally located with easy
+                        access to key landmarks:</p>
+                     <!-- Stats Section -->
+                <div class="stats-row">
+                    <div class="stat-item">
+                        <span class="stat-number">75</span>
+                        <div class="hospitality-intro">Contemporary Rooms & Suites</div>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">3.7</span>
+                        <div class="hospitality-intro">Miles to Mahatma Mandir</div>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">11</span>
+                        <div class="hospitality-intro">Miles to Airport</div>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">24/7</span>
+                        <div class="hospitality-intro">Room Service</div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+
+
+   
+
+        <!-- Amenities Section -->
+        <section class="hospitality-section">
+            <div class="container">
+                <h3  class="tp-section__title wow tpfadeUp mb-50 text-center"> Upscale Amenities & Services</h3>
+
+                <div class="amenity-grid">
+                    <div class="amenity-card">
+                        <h4><span class="emoji-icon">🍽️</span>Dining & Events</h4>
+                        <p>The in-house all-day dining restaurant "Amara" offers global and local cuisine, including
+                            vegan and halal options. Banquet facilities ideal for weddings, corporate gatherings, and
+                            conferences.</p>
+                    </div>
+
+                    <div class="amenity-card">
+                        <h4><span class="emoji-icon">💪</span>Fitness & Recreation</h4>
+                        <p>Fully equipped gym, 24-hour room service and concierge support, free Wi-Fi in rooms and
+                            public areas, free on-site parking and airport shuttle services.</p>
+                    </div>
+
+                    <div class="amenity-card">
+                        <h4><span class="emoji-icon">🛡️</span>Guest Comfort & Safety</h4>
+                        <p>Air-conditioned, soundproofed rooms with modern furnishings, in-room tea/coffee maker, work
+                            desk, safety box, and entertainment setup. Daily housekeeping, laundry services, and
+                            doctor-on-call services.</p>
+                    </div>
+
+                    <div class="amenity-card">
+                        <h4><span class="emoji-icon">🦠</span>COVID-Safe Protocols</h4>
+                        <p>Temperature checks, contactless check-in/out, sanitizer stations, PPE-protected staff
+                            ensuring peace of mind and corporate compliance.</p>
+                    </div>
+
+                    <div class="amenity-card">
+                        <h4><span class="emoji-icon">🏢</span>Corporate Solutions</h4>
+                        <p>Ideal for relocation assignments, consulting engagements, and business travelers with
+                            proximity to GIFT City & major IT hubs providing seamless access.</p>
+                    </div>
+
+                    <div class="amenity-card">
+                        <h4><span class="emoji-icon">🌱</span>Sustainable Practices</h4>
+                        <p>Eco-conscious design and sustainable practices aligned with Kaavyaratna's green values,
+                            offering comfort with environmental responsibility.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="hospitality-section">
+            <div class="container">
+                <h3 class="tp-section__title wow tpfadeUp mb-50 text-center">Why Choose Our Hospitality Offering?</h3>
+
+                <div class="features-grid">
+                    <div class="feature-item">75 Contemporary Rooms & Suites</div>
+                    <div class="feature-item">All-Day Dining Restaurant "Amara"</div>
+                    <div class="feature-item">State-of-the-Art Banquet Facilities</div>
+                    <div class="feature-item">Fully Equipped Gym</div>
+                    <div class="feature-item">24-Hour Room Service</div>
+                    <div class="feature-item">Free Wi-Fi & Parking</div>
+                    <div class="feature-item">Airport Shuttle Services</div>
+                    <div class="feature-item">Soundproofed Rooms</div>
+                    <div class="feature-item">In-Room Work Desk & Safety Box</div>
+                    <div class="feature-item">Daily Housekeeping</div>
+                    <div class="feature-item">Doctor-on-Call Services</div>
+                    <div class="feature-item">Contactless Check-in/Out</div>
+                </div>
+
+                <!-- Comparison Table -->
+                <div class="comparison-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Feature</th>
+                                <th>Benefit</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Proximity to GIFT City & major IT hubs</td>
+                                <td>Seamless access for business travelers</td>
+                            </tr>
+                            <tr>
+                                <td>Spacious, modern rooms and suites</td>
+                                <td>Comfort with eco-conscious design</td>
+                            </tr>
+                            <tr>
+                                <td>Extensive safety and hygiene protocols</td>
+                                <td>Peace of mind and corporate compliance</td>
+                            </tr>
+                            <tr>
+                                <td>On-site dining & event spaces</td>
+                                <td>Convenient venue for internal gatherings</td>
+                            </tr>
+                            <tr>
+                                <td>Sustainable practices</td>
+                                <td>Aligned with Kaavyaratna's green values</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+     
+
+    </main>
+
+    <footer style="background-size: 30%;">
+        <div class="bs-footer  ">
+            <div class="container">
+                <div class="bs-footer__main pb-10 pt-80  ">
+                    <div class="row ">
+                        <div class="col-xl-2 col-md-6">
+                            <div class="tp-footer__widget ">
+                                <img src="https://ik.imagekit.io/xzsikjxn8/kv/assets/img/kaavyaratna_tm_logo.png"
+                                    alt="Kaavyaratna" />
+                            </div>
+                            <h3 class="tp-footer__widget-title " style="margin-top: 20px;">Follow us on</h3>
+                            <ul class="cnt-social" style="margin-bottom: 20px;">
+                                <li><a href="https://www.facebook.com/kaavyaratnagroup" target="_blank">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a></li>
+                                <li><a href="https://www.linkedin.com/company/kaavyaratnagroup" target="_blank">
+                                        <i class="fab fa-linkedin"></i>
+                                    </a></li>
+                                <li><a href="https://www.instagram.com/kaavyaratna/" target="_blank">
+                                        <i class="fab fa-instagram"></i>
+                                    </a></li>
+                                <li><a href="https://www.youtube.com/@kaavyaratnagroup" target="_blank">
+                                        <i class="fab fa-youtube"></i>
+                                    </a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xl-3 col-md-6 offset-lg-1">
+                            <div class="tp-footer__widget mb-40">
+                                <h3 class="tp-footer__widget-title ">
+                                    Contact Us
+                                </h3>
+                                <ul>
+                                    <li>
+                                        <a href="https://maps.app.goo.gl/631Nssuzx5Ax9MaM8" target="_blank"><i
+                                                class="fa fa-map-marker-alt"></i>&nbsp;&nbsp;Sanskruti By Kaavyaratna,
+                                            B/s Shree Rang Pearl, GIFT CITY Road,
+                                            Randesan, Gandhinagar 382007</a>
+                                    </li>
+                                    <li><a href="tel:919099919068"><i class="fa fa-phone-alt"></i>&nbsp;+91 90999
+                                            19068</a></li>
+                                    <li><a href="mailto:info@kaavyaratna.com"><i
+                                                class="fa fa-envelope"></i>&nbsp;info@kaavyaratna.com</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6">
+                            <div class="tp-footer__widget mb-40">
+                                <h3 class="tp-footer__widget-title ">
+                                    Quick Links
+                                </h3>
+                                <ul>
+                                    <li><a href="careers.html">Careers</a></li>
+                                    <li><a href="rent-or-lease.html">Rent - Lease</a></li>
+                                    <li><a href="contact-us.html">Contact Us </a></li>
+                                    <li><a href="channel-partner.html">Channel Partner</a></li>
+                                    <li><a href="vendor-registration.html">Vendor Registration
+                                        </a></li>
+                                    <li><a href="hospitality.html">Hospitality</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="clearfixlg"></div>
+                        <div class="col-xl-3 col-md-6">
+                            <div class="tp-footer__widget mb-40">
+                                <h3 class="tp-footer__widget-title ">
+                                    Typology
+                                </h3>
+                                <ul>
+                                    <li><a href="2-bhk-in-gandhinagar.html">2 BHK in Gandhinagar</a></li>
+                                    <li><a href="3-bhk-in-gandhinagar.html">3 BHK in Gandhinagar</a></li>
+                                    <li><a href="4-bhk-in-gandhinagar.html">4 BHK in Gandhinagar</a></li>
+                                    <li><a href="residential-projects-in-gandhinagar.html">Residential Projects in
+                                            Gandhinagar</a></li>
+                                    <li><a href="commercial-projects-in-gandhinagar.html">Commercial Projects in
+                                            Gandhinagar</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6">
+                            <div class="tp-footer__widget mb-40">
+                                <h3 class="tp-footer__widget-title ">
+                                    Location
+                                </h3>
+                                <ul>
+                                    <li><a href="gift-city-property.html">GIFT City Property</a></li>
+                                    <li><a href="property-in-randesan.html">Property in Randesan</a></li>
+                                    <li><a href="property-in-pdpu-road.html">Property in PDPU Road</a></li>
+                                    <li><a href="property-in-sargasan.html">Property in Sargasan</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6">
+                            <div class="tp-footer__widget mb-40">
+                                <h3 class="tp-footer__widget-title ">
+                                    Residential
+                                </h3>
+                                <ul>
+                                    <li><a href="the-balcony.html">The Balcony</a></li>
+                                    <li><a href="pravesh.html">Pravesh </a></li>
+                                    <li><a href="the-bougainvillea.html">The Bougainvillea</a></li>
+                                    <li><a href="reva.html">Reva</a></li>
+                                    <li><a href="srushti.html">Srushti</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="clearfixlg"></div>
+                        <div class="col-xl-3 col-md-6">
+                            <div class="tp-footer__widget mb-40">
+                                <h3 class="tp-footer__widget-title ">
+                                    Commercial
+                                </h3>
+                                <ul>
+                                    <li><a href="narmada.html">Narmada</a></li>
+                                    <li><a href="nakshatra.html">Nakshatra</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6">
+                            <div class="tp-footer__widget mb-40">
+                                <h3 class="tp-footer__widget-title ">
+                                    Construction Status
+                                </h3>
+                                <ul>
+                                    <li><a href="ongoing-projects.html">Ongoing Projects</a></li>
+                                    <li><a href="ready-to-move-flats-gandhinagar.html">Ready to move flats</a></li>
+                                    <li><a href="completed-projects.html">Completed Projects</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tp-footer__bottom pt-25 pb-25 ha-footer-copyright">
+                    <div class="row align-items-center">
+                        <!--<div class="col-md-2 col-12">
+                    <div class="da-footer__top-social ">
+                            <span> <a href="https://www.facebook.com/kaavyaratnagroup/" target="_blank"><i class="fab fa-facebook-f"></i></a></span>
+                            <span> <a href="https://www.instagram.com/kaavyaratna/" target="_blank"><i class="fab fa-instagram"></i></a></span>
+                            <span> <a href="https://www.youtube.com/channel/UCcVCDAE2saDM4RBs0M3KgBw" target="_blank"><i class="fab fa-youtube"></i></a></span>
+                        </div>
+                    </div>-->
+
+                        <div class="col-lg-7 col-12 copyrights-text">
+                            <div class="tp-copyrigh-text text-lg-start">
+                                © <span class="currentyear"></span> Kaavyaratna Group. All Rights Reserved.
+                                <!--<a
+                                href="https://compubrain.com/" target="_blank"
+                                title="Website Designed by CompuBrain" class="cb"><img
+                                    src="https://ik.imagekit.io/xzsikjxn8/kv/assets/img/compubrain.png" alt="Website Designed by Compubrain"
+                                    title="Website Designed by Compubrain" /></a>-->
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="tp-footer-menu ">
+                                <ul>
+                                    <li><a href="terms-and-conditions.html">Terms <span class="sans-serif-font">&</span>
+                                            Conditions</a> </li>
+                                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <div class="navigation">
+        <div class="menuToggle"></div>
+        <div class="menu">
+            <ul>
+                <li><a href="https://www.youtube.com/@kaavyaratnagroup" target="_blank">
+                        <i class="fab fa-youtube"></i>
+                    </a></li>
+                <li><a href="https://www.linkedin.com/company/kaavyaratnagroup/" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a></li>
+                <li><a href="https://www.instagram.com/kaavyaratna/" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a></li>
+                <li><a href="https://www.facebook.com/kaavyaratnagroup" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a></li>
+                <li><a href="https://api.whatsapp.com/send/?phone=919099925604&amp;text&amp;type=phone_number&amp;app_absent=0"
+                        target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                    </a></li>
+                <li><a href="tel:919099919068" target="_blank">
+                        <i class="fa fa-phone"></i>
+                    </a></li>
+                <li><a href="mailto:info@kaavyaratna.com" target="_blank">
+                        <i class="fa fa-envelope"></i>
+                    </a></li>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+    <!-- JS here -->
+    <script src="assets/js/jquery7839.js?v=1.2"></script>
+    <script src="assets/js/waypoints7839.js?v=1.2"></script>
+    <script src="assets/js/modernizr7839.js?v=1.2"></script>
+    <script src="assets/js/bootstrap.bundle.min6fd1.js?v=1.2s"></script>
+    <script src="assets/js/wow7839.js?v=1.2"></script>
+    <script src="assets/js/maind1ad.js?v=1.120"></script>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Scroll reveal animation
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function (entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Form submission
+        document.querySelector('form').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const submitBtn = this.querySelector('.submit-btn');
+            const originalText = submitBtn.textContent;
+
+            submitBtn.textContent = 'Submitting...';
+            submitBtn.disabled = true;
+
+            setTimeout(() => {
+                alert('Thank you for your application! We will review your profile and get back to you soon.');
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
+                this.reset();
+            }, 2000);
+        });
+
+        // Counter animation for stats
+        function animateCounters() {
+            const counters = document.querySelectorAll('.stat-number');
+            counters.forEach(counter => {
+                const target = counter.textContent;
+                const numericTarget = parseFloat(target.replace(/[^0-9.]/g, ''));
+                const suffix = target.replace(/[0-9.]/g, '');
+
+                let current = 0;
+                const increment = numericTarget / 50;
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= numericTarget) {
+                        current = numericTarget;
+                        clearInterval(timer);
+                    }
+                    counter.textContent = (suffix.includes('.') ? current.toFixed(1) : Math.floor(current)) + suffix;
+                }, 30);
+            });
+        }
+
+        // Trigger counter animation when stats section is visible
+        const statsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounters();
+                    statsObserver.unobserve(entry.target);
+                }
+            });
+        });
+
+        const statsSection = document.querySelector('.stats-section');
+        if (statsSection) {
+            statsObserver.observe(statsSection);
+        }
+    </script>
+
+
+    <script>
+        /*! loadCSS. [c]2020 Filament Group, Inc. MIT License */
+        (function (w) {
+            "use strict";
+            /* exported loadCSS */
+            var loadCSS = function (href, before, media, attributes) {
+                // Arguments explained:
+                // `href` [REQUIRED] is the URL for your CSS file.
+                // `before` [OPTIONAL] is the element the script should use as a reference for injecting our stylesheet <link> before
+                // By default, loadCSS attempts to inject the link after the last stylesheet or script in the DOM. However, you might desire a more specific location in your document.
+                // `media` [OPTIONAL] is the media type or query of the stylesheet. By default it will be 'all'
+                // `attributes` [OPTIONAL] is the Object of attribute name/attribute value pairs to set on the stylesheet's DOM Element.
+                var doc = w.document;
+                var ss = doc.createElement("link");
+                var ref;
+                if (before) {
+                    ref = before;
+                } else {
+                    var refs = (doc.body || doc.getElementsByTagName("head")[0]).childNodes;
+                    ref = refs[refs.length - 1];
+                }
+
+                var sheets = doc.styleSheets;
+                // Set any of the provided attributes to the stylesheet DOM Element.
+                if (attributes) {
+                    for (var attributeName in attributes) {
+                        if (attributes.hasOwnProperty(attributeName)) {
+                            ss.setAttribute(attributeName, attributes[attributeName]);
+                        }
+                    }
+                }
+                ss.rel = "stylesheet";
+                ss.href = href;
+                // temporarily set media to something inapplicable to ensure it'll fetch without blocking render
+                ss.media = "only x";
+
+                // wait until body is defined before injecting link. This ensures a non-blocking load in IE11.
+                function ready(cb) {
+                    if (doc.body) {
+                        return cb();
+                    }
+                    setTimeout(function () {
+                        ready(cb);
+                    });
+                }
+                // Inject link
+                // Note: the ternary preserves the existing behavior of "before" argument, but we could choose to change the argument to "after" in a later release and standardize on ref.nextSibling for all refs
+                // Note: `insertBefore` is used instead of `appendChild`, for safety re: http://www.paulirish.com/2011/surefire-dom-element-insertion/
+                ready(function () {
+                    ref.parentNode.insertBefore(ss, (before ? ref : ref.nextSibling));
+                });
+                // A method (exposed on return object for external use) that mimics onload by polling document.styleSheets until it includes the new sheet.
+                var onloadcssdefined = function (cb) {
+                    var resolvedHref = ss.href;
+                    var i = sheets.length;
+                    while (i--) {
+                        if (sheets[i].href === resolvedHref) {
+                            return cb();
+                        }
+                    }
+                    setTimeout(function () {
+                        onloadcssdefined(cb);
+                    });
+                };
+
+                function loadCB() {
+                    if (ss.addEventListener) {
+                        ss.removeEventListener("load", loadCB);
+                    }
+                    ss.media = media || "all";
+                }
+
+                // once loaded, set link's media back to `all` so that the stylesheet applies once it loads
+                if (ss.addEventListener) {
+                    ss.addEventListener("load", loadCB);
+                }
+                ss.onloadcssdefined = onloadcssdefined;
+                onloadcssdefined(loadCB);
+                return ss;
+            };
+            // commonjs
+            if (typeof exports !== "undefined") {
+                exports.loadCSS = loadCSS;
+            } else {
+                w.loadCSS = loadCSS;
+            }
+        }(typeof global !== "undefined" ? global : this));
+
+        /*! onloadCSS. (onload callback for loadCSS) [c]2017 Filament Group, Inc. MIT License */
+        /* global navigator */
+        /* exported onloadCSS */
+        function onloadCSS(ss, callback) {
+            var called;
+
+            function newcb() {
+                if (!called && callback) {
+                    called = true;
+                    callback.call(ss);
+                }
+            }
+            if (ss.addEventListener) {
+                ss.addEventListener("load", newcb);
+            }
+            if (ss.attachEvent) {
+                ss.attachEvent("onload", newcb);
+            }
+
+            // This code is for browsers that don’t support onload
+            // No support for onload (it'll bind but never fire):
+            //	* Android 4.3 (Samsung Galaxy S4, Browserstack)
+            //	* Android 4.2 Browser (Samsung Galaxy SIII Mini GT-I8200L)
+            //	* Android 2.3 (Pantech Burst P9070)
+
+            // Weak inference targets Android < 4.4
+            if ("isApplicationInstalled" in navigator && "onloadcssdefined" in ss) {
+                ss.onloadcssdefined(newcb);
+            }
+        }
+    </script>
+
+
+    <script id="loadcss">
+        // load a CSS file just before the script element containing this code
+        // loadCSS("https://www.resmanagement.in/assets/css/main.css?v=1.1210", document.getElementById("loadcss"));
+        onloadCSS(loadCSS('assets/css/bundle7839.css?v=1.2'));
+        onloadCSS(loadCSS('assets/css/newstylee67d.css?v=1.3'),
+            function () {
+                document.getElementById("loadcssTemp").remove();
+            });
+    </script>
+
+</body>
+
+</html>
